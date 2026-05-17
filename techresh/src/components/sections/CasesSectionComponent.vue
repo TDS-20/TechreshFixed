@@ -131,6 +131,10 @@ const cases = ref([
   background-color: #fff;
 }
 
+body.dark-theme .cases {
+  background-color: #1a1a2e;
+}
+
 .section-title {
   text-align: center;
   margin-left: auto;
@@ -146,6 +150,10 @@ const cases = ref([
   max-width: 700px;
   margin: -1rem auto 3rem;
   font-size: 1.1rem;
+}
+
+body.dark-theme .cases-intro {
+  color: #b0b0b0;
 }
 
 .cases-list {
@@ -165,6 +173,12 @@ const cases = ref([
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+}
+
+body.dark-theme .case-card {
+  background: linear-gradient(145deg, #16213e, #1a1a2e);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-color: #2d2d44;
 }
 
 .case-card::before {
@@ -188,6 +202,11 @@ const cases = ref([
   border-color: #eaf3ff;
 }
 
+body.dark-theme .case-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.3);
+  border-color: #3d3d5c;
+}
+
 .case-header {
   display: flex;
   justify-content: space-between;
@@ -200,6 +219,10 @@ const cases = ref([
   color: #007bff;
   font-size: 1.3rem;
   flex: 1;
+}
+
+body.dark-theme .case-header h3 {
+  color: #4dabf7;
 }
 
 .case-date {
@@ -216,10 +239,18 @@ const cases = ref([
   color: #007bff;
 }
 
+body.dark-theme .case-client strong {
+  color: #4dabf7;
+}
+
 .case-description {
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+body.dark-theme .case-description {
+  color: #b0b0b0;
 }
 
 .case-tasks,
@@ -235,6 +266,11 @@ const cases = ref([
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+body.dark-theme .case-tasks h4,
+body.dark-theme .case-result h4 {
+  color: #4dabf7;
 }
 
 .case-tasks h4::before,
@@ -259,6 +295,10 @@ const cases = ref([
   transition: transform 0.3s ease;
 }
 
+body.dark-theme .case-tasks li {
+  color: #b0b0b0;
+}
+
 .case-tasks li::before {
   content: '▹';
   position: absolute;
@@ -267,9 +307,17 @@ const cases = ref([
   font-weight: bold;
 }
 
+body.dark-theme .case-tasks li::before {
+  color: #4dabf7;
+}
+
 .case-tasks li:hover {
   transform: translateX(5px);
   color: #007bff;
+}
+
+body.dark-theme .case-tasks li:hover {
+  color: #4dabf7;
 }
 
 .case-result p {
@@ -279,6 +327,12 @@ const cases = ref([
   color: #333;
   font-weight: 500;
   border-left: 3px solid #007bff;
+}
+
+body.dark-theme .case-result p {
+  background: linear-gradient(135deg, #1e3a5f, #2d4a6f);
+  color: #e0e0e0;
+  border-left-color: #4dabf7;
 }
 
 @media (max-width: 768px) {
