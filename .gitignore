@@ -1,1 +1,50 @@
-Nothing should be ignored based on the provided file changes. The only added file is a source code file (`techresh/src/main.js`) which should not be ignored.
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.obj
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+
+# Compiled JavaScript
+*.js.map
+*.min.js
+
+# Vite specific
+.vite/
+
+# Package manager
+package-lock.json
+yarn.lock
+
+# OS generated
+.DS_Store
+Thumbs.db
+```
