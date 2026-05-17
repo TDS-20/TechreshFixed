@@ -46,6 +46,26 @@ body.dark-theme .centered-contacts-title {
   color: #e0e0e0 !important;
 }
 
+.contacts {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+body.dark-theme .contacts {
+  background: #0f0f1a;
+}
+
+.contacts p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+body.dark-theme .contacts p {
+  color: #b0b0b0;
+}
+
 .social-buttons {
   display: flex;
   justify-content: center;

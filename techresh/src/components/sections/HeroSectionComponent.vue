@@ -32,6 +32,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 80px;
 }
 
 .hero-background {
@@ -61,11 +62,57 @@ onMounted(() => {
 .hero-content {
   position: relative;
   z-index: 1;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
 }
 
 .centered-btn {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+  display: inline-block;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.centered-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  background: linear-gradient(135deg, #20bd5a, #0f7a6e);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .centered-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
 }
 </style>

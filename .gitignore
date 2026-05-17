@@ -5,7 +5,9 @@ node_modules/
 # Build artifacts
 dist/
 build/
-*.js.map
+
+# Logs
+*.log
 
 # Environment
 .env
@@ -15,12 +17,6 @@ build/
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Logs and temp files
-*.log
-*.tmp
 
 # Python
 __pycache__/
@@ -28,4 +24,9 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+venv/
+.venv/
+.env
+.env.local
+.env.*
 ```
